@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_basics</title>
+</head>
+<body>
+    <button onclick="show(sum)">Click me</button><br>
+    <button onclick="ifcase()">If</button><br>
+    <button onclick="one_to_ten()">One to ten</button><br>
+    <button onclick="array()">Array</button><br>
+    <button onclick="objective()">Object</button>
+    <script>
+        var num1 = 23
+        var num2 = 34
+        var sum = num1+num2
+
+        function show(sum) {
+            console.log("Hai You clicked the button") 
+            console.log("Sum ="+sum)
+        }
+
+        function ifcase(sum){
+            console.log("If condition")
+            if(sum%2==0){
+                console.log("Number is even")
+            }
+            else {
+                console.log("Number os odd or zero")
+            }
+        }
+        function one_to_ten() {
+            for(var i=0;i<10;i++){
+                console.log(i+1)
+            }
+        }
+        function array() {
+            ar1 = ["apple",0.546,"jacket"]
+            console.log(ar1)
+            console.log(ar1[2])
+        }
+        function objective(){
+            var person = {
+                Name : "Gautham Krshna p",
+                Age : 20,
+                Place: "Mukkam kozhikode",
+                Phone : 8289809371,
+            }
+            let peopls = [{
+                Name:"RaviKumar",
+                Age:30
+            },{
+                Name:"Muhammed nadeem",
+                Phone:9967893456
+            },{
+                Name:"Kurian",
+                Place:"Kadalundi",
+                Age:43
+            }]
+            console.log("Name :"+person.Name)
+            console.log(person)
+            console.log(peopls)
+        }
+    </script>
+</body>
+</html>
