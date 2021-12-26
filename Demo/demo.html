@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<body>
+    <input type="text" id="inpt">
+    <button onclick="display_text()">Click me</button><br><br>
+    <h1 id="display-head"></h1>
+
+    <input type="text" id="inpt1">
+    <button onclick="display_text1()">Click me</button>
+    <h1 id="display-name"></h1>
+    
+
+    <script>
+        function display_text(){
+            text = document.getElementById("inpt").value /*assigned the value in input through ID*/
+            document.getElementById("display-head").innerHTML = text /*Changed the html content to the text through ID*/
+            alert("Ok to display")
+        }
+        function display_text1(){
+            text = document.getElementById("inpt1").value
+            if (text=="Gautham Krishna P") {
+                alert("This name is already used")
+            }else {
+                document.getElementById("display-name").innerHTML = text
+            }
+        }
+    </script>
+</body>
+</html>
