@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3schoolsjs</title>
+</head>
+<body>
+    <center>
+        <button onclick="start()">Start</button>
+        <img src="red.jpg" id="image">
+        <button onclick="stop()">Stop</button>
+    </center>
+
+
+    <script>
+        function start(){
+            let icon = document.getElementsById("image")
+            icon.setAttribute("src","green.jpg")
+        }
+        function stop(){
+            document.getElementsById("image").src = "red.jpg"
+        }
+    </script>
+</body>
+</html>
